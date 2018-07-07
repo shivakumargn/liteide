@@ -6,6 +6,11 @@ if [ -z $LITEIDE_ROOT ]; then
 	export LITEIDE_ROOT=$PWD/../liteidex
 fi
 
+if [ -z $QT4LIBS ]; then
+	QT4LIBS=/usr/lib/x86_64-linux-gnu
+	echo "Setting QT4LIBS=$QT4LIBS"
+fi
+
 QT4LIBS=/usr/lib/x86_64-linux-gnu
 echo "Setting QT4LIBS=$QT4LIBS"
 
